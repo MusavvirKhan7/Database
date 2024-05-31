@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/ui"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="600dp"
+        app:cardCornerRadius="40dp"
+        android:layout_gravity="bottom"
+        app:cardBackgroundColor="@color/white"
+        android:layout_margin="55dp" >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            app:cornerRadius="30dp"
+            app:startIconDrawable="@drawable/baseline_account_box_24"
+            app:boxStrokeColor="#2979FF">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="200dp"
+                android:layout_margin="50dp"
+                android:id="@+id/name2"
+                android:layout_height="wrap_content"
+                android:textColorHint="#2979FF"
+                android:backgroundTint="#2979FF"
+                android:hint="enter name." />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="270dp"
+            app:passwordToggleEnabled="true"
+            app:boxStrokeColor="#2979FF">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="200dp"
+                android:layout_margin="50dp"
+                android:layout_height="wrap_content"
+                android:textColorHint="#2979FF"
+                android:id="@+id/etpassword2"
+                android:backgroundTint="#2979FF"
+                android:hint="enter password."
+                android:inputType="textPassword"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/SignINbtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2979FF"
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"
+            android:text="Sign in" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome, Sign in"
+            android:textStyle="bold"
+            android:textSize="50dp"
+            android:layout_margin="15dp"
+            android:textColor="#2979FF"/>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
